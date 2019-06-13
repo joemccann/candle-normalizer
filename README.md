@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-Normalize candle data to a single, consistent format irrespective of exchange.
+🕯 Normalize candle data to a single, consistent format irrespective of exchange.
 
 ## USAGE
 
