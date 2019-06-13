@@ -26,7 +26,7 @@ module.exports = (data) => {
         timestamp: parseInt(candle[0]) * 1000
       })
     })
-    return { data: normalized }
+    return { data: normalized.reverse() } // reverse for ascending order
   }
 
   if (exchange === 'binance') {
@@ -56,7 +56,7 @@ module.exports = (data) => {
         timestamp: parseInt(candle.closeTime)
       })
     })
-    return { data: normalized }
+    return { data: normalized } // ascending order by default
   }
 
   return { err: new Error(`Exchange, ${exchange}, not supported.`) }
